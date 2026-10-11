@@ -1,0 +1,68 @@
+PERFORMATIVE DETECTOR - SETUP INSTRUCTIONS
+==========================================
+
+STEP 1: Install New Dependencies
+---------------------------------
+Run this command to install pygame (for audio playback):
+
+    pip install -r requirements.txt
+
+OR install just pygame:
+
+    pip install pygame
+
+
+STEP 2: Get the Audio File
+---------------------------
+You need to place a file named "juna.mp3" in this folder:
+
+    C:\Users\eijoj\Desktop\Mobile Programming\py\
+
+The program will look for this file and play it when a book is detected.
+
+
+STEP 3: Run the Program
+------------------------
+    python performative_detector.py
+
+
+WHAT CHANGED:
+=============
+✓ Removed browser/YouTube opening
+✓ Added pygame for audio playback
+✓ Music plays directly in the program
+✓ Music STARTS when book is detected
+✓ Music plays ONCE THROUGH (no looping)
+✓ Music CONTINUES even if book is removed
+✓ Shows "♫ Playing" indicator on status panel
+✓ Better debug output to troubleshoot audio issues
+
+
+HOW IT WORKS:
+=============
+1. Show a book to the camera
+2. Music starts playing ONCE (no looping)
+3. Remove the book from view
+4. Music CONTINUES playing until finished
+5. Music finishes naturally
+6. Show book again = music starts from beginning
+
+
+TROUBLESHOOTING:
+================
+- If "juna.mp3" is missing, the program will show a warning but still run
+- Watch the console for detailed messages:
+  ✓ "Audio system initialized" = audio is working
+  ✓ "Found audio file" = juna.mp3 found
+  ✓ "Audio file loaded successfully" = file is valid
+  ✓ "Starting playback" = attempting to play
+  ✓ "Music is now playing!" = playback started
+- Make sure your system audio is not muted
+- Check your system volume is turned up
+- The program will tell you where to place juna.mp3 if it's not found
+- Press 'Q' to quit the program
+- Volume is set to 100% by default
+
+
+Enjoy your performative book reading! 📚🎵
+
